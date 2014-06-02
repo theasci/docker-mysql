@@ -11,3 +11,5 @@ RUN chmod 664 /etc/mysql/my.cnf
 ADD setup_mysql.sh /usr/local/bin/setup_mysql.sh
 RUN chmod +x /usr/local/bin/setup_mysql.sh
 RUN "/usr/local/bin/setup_mysql.sh"
+
+CMD ["/usr/sbin/mysqld", "--skip-name-resolve", "--skip-host-cache"]
