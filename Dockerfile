@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:centos6
 MAINTAINER Mason Malone <masonm@the-jci.org>
 
 RUN yum -y upgrade
